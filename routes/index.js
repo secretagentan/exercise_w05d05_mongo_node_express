@@ -8,10 +8,11 @@ var url = 'mongodb://localhost:27017/TESTER';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index');
+  // render the index.hbs template and replace {{title}} with 'MongoDB - Basics'
+  res.render('index', {title: 'MongoDB - Basics'});
 });
 
-/* Insert */
+/* CREATE Data */
 router.post('/insert', function(req, res, next) {
   var item = {
     title: req.body.title,
@@ -31,8 +32,8 @@ router.post('/insert', function(req, res, next) {
   res.redirect('/');
 });
 
-/* Get Data */
-/* Update Data */
-/* Delete Data */
+/* READ Data */
+/* UPDATE Data */
+/* DELETE Data */
 
 module.exports = router;

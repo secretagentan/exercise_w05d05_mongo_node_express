@@ -10,8 +10,10 @@ var routes = require('./routes/index');
 var app = express();
 
 //view engine set-up
-app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layouts/'}));
+app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'main', layoutsDir: __dirname + '/views/layouts/'}));
+// server .hbs templates from views with res.render
 app.set('views', path.join(__dirname, 'views'));
+// Use Handlebars syntax {{ }}
 app.set('view engine', 'hbs');
 
 app.use(logger('dev'));
