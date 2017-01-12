@@ -5,7 +5,7 @@ Let's practice issuing commands to our MongoDb server via HTTP!
 ## 👷 Setup
 
 - Fork and clone this repo. 
-- Install your dependencies with `npm install` and run `node app.js` to start up your server.
+- Install your dependencies with `npm install` and start up your server.
 - Start up a mongoDB server!
 
 ## 🔬 Getting started
