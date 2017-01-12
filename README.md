@@ -59,7 +59,7 @@ Update the rendered list of data to include a "UPDATE" button next to each item 
 When a user clicks "UPDATE" for an item
 
 - [ ] the client should send an HTTP POST request to '/data/[objectId]'
-- [ ] the server should modify the data with that objectId and change the author to "Shakespear"
+- [ ] the server should modify the data with that objectId and change the author to "Shakespeare"
 - [ ] the server should send back a JSON response of `{status: 200}`
 - [ ] the client should change the name in the list
 
@@ -74,7 +74,7 @@ When a user visits '/data/[objectId]/edit'
 When a user visits '/data/[objectId]/edit' and changes the data and clicks "Update"
 
 - [ ] the client should send an HTTP POST request with the data to '/data/[objectId]'
-- [ ] the server should update the data with that objectId with the data from the body of the post request
+- [ ] change the server so it should update the data with that objectId with the data from the body of the post request
 - [ ] the server should send back a 302 response and redirect the browser to '/'
 
 Add a nav bar to the `main.hbs` layout template to provide links to 'Home' and 'Data'
