@@ -1,5 +1,26 @@
 # 🏋️ Working with Mongo in Node with Express
 
+**Directory Structure:**
+
+```
+.
+├── README.md
+├── app.js
+├── package.json
+├── public
+│   ├── main.js
+│   └── style.css
+├── routes
+│   └── index.js
+└── views
+    ├── index.hbs
+    └── layouts
+        └── main.hbs
+
+4 directories, 8 files
+
+```
+
 Let's practice issuing commands to our MongoDb server via HTTP!
 
 ## 👷 Setup
