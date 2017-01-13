@@ -1,6 +1,6 @@
 # 🏋️ Working with Mongo in Node with Express
 
-**Directory Structure:**
+## Directory Structure
 
 ```
 .
