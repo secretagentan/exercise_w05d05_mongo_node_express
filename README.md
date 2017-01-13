@@ -2,25 +2,6 @@
 
 ## Directory Structure
 
-```
-.
-├── README.md
-├── app.js
-├── package.json
-├── public
-│   ├── main.js
-│   └── style.css
-├── routes
-│   └── index.js
-└── views
-    ├── index.hbs
-    └── layouts
-        └── main.hbs
-
-4 directories, 8 files
-
-```
-
 Let's practice issuing commands to our MongoDb server via HTTP!
 
 ## 👷 Setup
@@ -52,15 +33,22 @@ When a user visits '/data'
 - [ ] The server should respond with JSON of all the inserted data
 
 When a user visits '/' and clicks "Get Data"
+    - the client should perform an XHR GET request to '/data'
+    - the server should retrieve all the data from MongoDB
+    - the server should return a JSON response of the data
 
-- [ ] the client should perform an XHR GET request to '/data'
-- [ ] the server should retrieve all the data from MongoDB
-- [ ] the server should return a JSON response of the data
-- [ ] the client should render a list of all the data
+When a user visits '/comments'
+    - the server should retrieve all the data from MongoDB
+    - the server should render an HTML response using a Handlebars template
+>>>>>>> update to readme
 
 When a user visits '/data/[objectId]'
 
 - [ ] The server should respond with JSON of that inserted data with that objectId
+
+When a user visits '/comments/[objectId]'
+    - the server should retrieve that data from MongoDB
+    - the server should render an HTML response using a Handlebars template
 
 ### 💀 cruD
 
@@ -86,17 +74,18 @@ When a user clicks "UPDATE" for an item
 
 # 🚀 Bonus
 
-When a user visits '/data/[objectId]/edit'
+When a user visits "/" and clicks "GET DATA"
+    - render the JSON response with a client side templating language - handlebars or ejs, check "main.hbs" for Handlebars or Underscore
+    
+When a user visits '/comments/[objectId]/edit'
+    - the server should render an HTML response using a Handlebars template
+    - the response should include an HTML form
+    - the form fields should be pre-populated with the values from the data
 
-- [ ] the server should render an HTML response using a Handlebars template
-- [ ] the response should include an HTML form
-- [ ] the form fields should be pre-populated with the values from the data
-
-When a user visits '/data/[objectId]/edit' and changes the data and clicks "Update"
-
-- [ ] the client should send an HTTP POST request with the data to '/data/[objectId]'
-- [ ] change the server so it should update the data with that objectId with the data from the body of the post request
-- [ ] the server should send back a 302 response and redirect the browser to '/'
+When a user visits '/comments/[objectId]/edit' and changes the data and clicks "Update"
+    - the client should send an HTTP POST request with the data to '/data/[objectId]'
+    - the server should update the data with that objectId with the data from the body of the post request
+    - the server should send back a 302 response and redirect the browser to '/'
 
 Add a nav bar to the `main.hbs` layout template to provide links to 'Home' and 'Data'
 
@@ -109,3 +98,4 @@ Add a nav bar to the `main.hbs` layout template to provide links to 'Home' and '
 - [Express Router](https://scotch.io/tutorials/learn-to-use-the-new-router-in-expressjs-4)
 - [MongoClient](https://mongodb.github.io/node-mongodb-native/driver-articles/mongoclient.html)
 - [Node Assert](https://nodejs.org/api/assert.html)
+- [Client Side EJS](http://underscorejs.org/#template)
