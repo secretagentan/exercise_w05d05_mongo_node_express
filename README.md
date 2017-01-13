@@ -1,7 +1,5 @@
 # 🏋️ Working with Mongo in Node with Express
 
-## Directory Structure
-
 Let's practice issuing commands to our MongoDb server via HTTP!
 
 ## 👷 Setup
@@ -11,6 +9,28 @@ Let's practice issuing commands to our MongoDb server via HTTP!
 - [ ] Start up a mongoDB server!
 
 ## 🔬 Getting started
+
+Start poking around.
+
+## Directory Structure
+```
+.
+├── README.md
+├── app.js
+├── package.json
+├── public
+│   ├── main.js
+│   └── style.css
+├── routes
+│   └── index.js
+└── views
+    ├── index.hbs
+    └── layouts
+        └── main.hbs
+
+4 directories, 8 files
+
+```
 
 - [ ] Look through `routes/index.js` to see how we're connecting to MongoDB
 - [ ] Check out `views/layouts/main.hbs` what scripts are being loaded on the client side?
