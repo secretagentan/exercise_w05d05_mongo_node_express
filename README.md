@@ -4,9 +4,9 @@ Let's practice issuing commands to our MongoDb server via HTTP!
 
 ## 👷 Setup
 
-- [ ] Fork and clone this repo. 
-- [ ] Install your dependencies with `npm install` and start up your server.
-- [ ] Start up a mongoDB server!
+- [x] Fork and clone this repo. 
+- [x] Install your dependencies with `npm install` and start up your server.
+- [x] Start up a mongoDB server!
 
 ## 🔬 Getting started
 
@@ -32,13 +32,13 @@ Start poking around.
 
 ```
 
-- [ ] Look through `routes/index.js` to see how we're connecting to MongoDB
-- [ ] Check out `views/layouts/main.hbs` what scripts are being loaded on the client side?
-- [ ] This app will connect to a mongoDB called "TESTER"
+- [x] Look through `routes/index.js` to see how we're connecting to MongoDB
+- [x] Check out `views/layouts/main.hbs` what scripts are being loaded on the client side?
+- [x] This app will connect to a mongoDB called "TESTER"
 
 ### 🤰 Crud
-- [ ] Visit '/' and try adding data. 
-- [ ] Connect to the MongoDB via the mongoshell to ensure data is making its way there!
+- [x] Visit '/' and try adding data. 
+- [x] Connect to the MongoDB via the mongoshell to ensure data is making its way there!
 
 ## Implement the following user stories
 
@@ -46,20 +46,20 @@ Start poking around.
 
 When a user visits '/'
 
-- [ ] they should see a button "Get Data"
+- [x] they should see a button "Get Data"
 
 When a user visits '/data'
 
-- [ ] The server should respond with JSON of all the inserted data
+- [x] The server should respond with JSON of all the inserted data
 
 When a user visits '/' and clicks "Get Data"
-    - the client should perform an XHR GET request to '/data'
-    - the server should retrieve all the data from MongoDB
-    - the server should return a JSON response of the data
+    [x] the client should perform an XHR GET request to '/data'
+    [x] the server should retrieve all the data from MongoDB
+    [x] the server should return a JSON response of the data
 
 When a user visits '/comments'
-    - the server should retrieve all the data from MongoDB
-    - the server should render an HTML response using a Handlebars template
+    [x] the server should retrieve all the data from MongoDB
+    [x] the server should render an HTML response using a Handlebars template
 >>>>>>> update to readme
 
 When a user visits '/data/[objectId]'

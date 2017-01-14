@@ -33,7 +33,41 @@ router.post('/insert', function(req, res, next) {
 });
 
 /* READ Data */
+
+router.get('/data', function(req, res, next) {
+  mongo.connect(url, function(err, db) {
+    db.collection('data').find({}).toArray(function(err, result){
+      res.json(result);
+      console.log("Here's the data");
+      db.close();
+    });
+  })
+});
+
+router.get('/comments', function(req, res, next) {
+  mongo.connect(url, function(err, db) {
+    db.collection('data').find({}).toArray(function(err, result){
+      var data = res.json(result);
+      res.render('./layouts/main', {body: data});
+      // res.json(result);
+      console.log('main html rendered');
+      db.close();
+    });
+  })
+});
+
 /* UPDATE Data */
 /* DELETE Data */
 
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
