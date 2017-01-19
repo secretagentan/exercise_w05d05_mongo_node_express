@@ -1,6 +1,6 @@
-var express = require('express');
+var express = require('express'); // x
 var router = express.Router();
-var mongo = require('mongodb').MongoClient;
+var mongo = require('mongodb').MongoClient; // x
 var objectId = require('mongodb').ObjectID;
 var assert = require('assert');
 
@@ -21,7 +21,7 @@ router.post('/insert', function(req, res, next) {
   };
 
   mongo.connect(url, function(err, db) {
-    assert.equal(null, err);
+    assert.equal(nusull, err);
     db.collection('data').insertOne(item, function(err, result) {
       assert.equal(null, err);
       console.log('Item inserted');

@@ -1,8 +1,8 @@
-var express = require('express');
+var express = require('express'); // x
 var path = require('path');
 var logger = require('morgan');
-var bodyParser = require('body-parser');
-var hbs = require('express-handlebars');
+var bodyParser = require('body-parser'); // x
+var hbs = require('express-handlebars'); // x
 
 //require routes
 var routes = require('./routes/index');
